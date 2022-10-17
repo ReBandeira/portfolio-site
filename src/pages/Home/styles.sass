@@ -1,0 +1,222 @@
+@use '../../styles/mixins'
+@use '../../styles/variables'
+
+.home 
+    @include mixins.center 
+    flex-direction: column
+    height: 200vh 
+
+    .header, .about 
+        @include mixins.center
+        height: 100vh 
+        width: 100vw
+            
+    .header 
+        flex-direction: column
+        background: variables.$gradient-bg
+        position: relative 
+        z-index: 1
+    
+        .avatar 
+            @include mixins.center
+            flex-direction: column
+            position: absolute
+            top: 10vh
+            padding: none
+            border-radius: 50%
+            width: 270px
+            height: 270px 
+
+            @include mixins.notebook 
+                width: 240px
+                height: 240px 
+
+            @include mixins.tablet 
+                top: 18vh
+                width: 200px
+                height: 200px 
+
+            @include mixins.mobile             
+                top: 18vh
+                width: 180px
+                height: 180px 
+            
+            .foto-perfil 
+                margin: none
+                padding: none
+                width: 100%
+                max-height: 100%
+                border-radius: 50%
+                object-fit: cover     
+
+        .card 
+            @include mixins.center
+            flex-direction: column
+            text-align: center
+            width: 30vw
+            height: 23vh
+            padding: 10px 20px
+            position: relative
+            z-index: 3
+            top: 10vh
+            cursor: pointer
+            margin: 2.5% 0 
+
+            @include mixins.notebook 
+                width: 40vw 
+                padding: 20px 15px 
+
+            @include mixins.tablet 
+                width: 50vw 
+                height: 20vh
+                padding: 20px 15px 
+                top: 12vh 
+
+            @include mixins.mobile 
+                width: 55vw   
+                height: 22vh
+                top: 15vh                      
+                
+        .card:after,
+        .card:before 
+            content: ""
+            position: absolute
+            bottom: 0
+            top: 0
+            left: 0
+            right: 0
+            transition: transform .3s ease-in-out
+
+        .card:before 
+            border-left: 3px solid #fff
+            border-right: 3px solid#fff
+            transform: scaleY(1)
+
+        .card:after 
+            border-top: 3px solid #fff
+            border-bottom: 3px solid #fff
+            transform: scaleX(1)
+
+        .card:hover:before  
+            transform: scaleY(0) 
+
+        .card:hover:after  
+            transform: scaleX(0)
+
+        .card-title 
+            color: variables.$text-color 
+            font-size: max(36px, 2.5vw)
+            font-weight: 600
+
+            @include mixins.notebook 
+                font-size: max(34px, 2.2vw)
+                font-weight: 550
+
+            @include mixins.tablet 
+                font-size: max(28px, 1.6vw)
+                font-weight: 500 
+
+            @include mixins.mobile 
+                font-size: max(24px, 1vw)
+                font-weight: 500 
+                margin-bottom: 2%
+ 
+
+        .card-sub-title 
+            color: variables.$text-color 
+            font-size: max(30px, 2vw)
+            font-weight: 400 
+
+            @include mixins.notebook 
+                font-size: max(28px, 1.8vw)
+                font-weight: 400
+
+            @include mixins.tablet 
+                font-size: max(24px, 1.2vw)
+                font-weight: 400 
+
+            @include mixins.mobile 
+                font-size: max(20px, .8vw)
+                font-weight: 400 
+
+        .card-button 
+            width: 50%
+            height: 30%        
+            border-radius: 10%         
+            position: relative                         
+    
+            .card-icon
+                border: none 
+                border-radius: 50% 
+                background: none 
+                cursor: pointer              
+
+                #arrow  
+                    color: #fff
+                    font-size: max(40px, 2.5vw)
+
+                    @include mixins.notebook 
+                        font-size: max(34px, 2.2vw)
+
+                    @include mixins.tablet 
+                        font-size: max(28px, 1.4vw) 
+
+                    @include mixins.mobile 
+                        font-size: max(26px, 1vw)
+               
+                                        
+            #text
+                font-size: max(24px, 0.8vw)
+                outline-width: 40px  
+                color: #fff
+                margin: 4% 0
+                display: none
+                transition: transform .3s ease-in-out 
+
+                @include mixins.notebook 
+                    font-size: max(20px, 1.3vw) 
+
+                @include mixins.tablet 
+                    font-size: max(18px, .6vw)
+                    margin: 2% 0
+                
+        .card-button:hover 
+            
+            .card-icon:hover 
+                background: variables.$bg-color 
+
+            #text
+                display: block 
+
+        .waves-container 
+            width: 100% 
+            height: 22vw 
+            position: absolute 
+            z-index: 2
+            bottom: 0 
+            right: 0 
+            left: 0
+
+    .about  
+        background: variables.$gradient-color-secundary 
+        display: flex 
+        flex-direction: column 
+        justify-content: left 
+
+
+ 
+/* @include mixins.notebook                
+                height: 22vw
+                position: absolute 
+                z-index: 2
+                bottom: 0 
+                right: 0 
+                left: 0
+            
+            @include mixins.tablet 
+                height: 22vw 
+                position: absolute 
+                z-index: 2
+                bottom: 0 
+                right: 0 
+                left: 0 */

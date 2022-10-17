@@ -1,0 +1,34 @@
+@use '../../styles/mixins'
+
+.waves  
+    display: block    
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+
+    .wave-1 
+        animation: movewave1 3s ease-in-out infinite alternate
+
+        @keyframes movewave1 
+            from 
+                transform: translateX(-2000px)
+                transform: scaleX(2) 
+       
+    .wave-2 
+        animation: movewave2 3s 1.2s ease-in-out infinite alternate
+
+        @keyframes movewave2 
+            from 
+                transform: translateX(-1800px) 
+                transform: scaleX(2)
+
+    .wave-3 
+        animation: movewave3 3s 0.7s ease-in-out infinite alternate 
+
+        @keyframes movewave3 
+            from 
+                transform: translateX(-1600px)
+                transform: scaleX(2) 
+            
+    
