@@ -4,6 +4,7 @@ import { BiArrowToBottom } from 'react-icons/bi';
 import MainContainer from '../../components/MainContainer';
 import Footer from '../../components/Footer';
 import './styles.sass';
+import Sobre from '../Sobre';
 
 
 export default function Home() {    
@@ -21,7 +22,7 @@ export default function Home() {
 
     return (
         <div className='home'>
-            <header className='header'>
+            <header className='header-home'>
                 <div className='avatar'>
                     <img src={perfil} className='foto-perfil' alt="foto frontal de uma mulher"/>
                 </div>
@@ -40,9 +41,8 @@ export default function Home() {
                 </div>
                    
             </header>
-            <section  id='section-about' className='about'>
-                <MainContainer/>
-                <Footer/>                               
+            <section  id='section-about' className='section-about'>
+                <Sobre/>                           
             </section>            
         </div>
         

@@ -6,12 +6,12 @@
     flex-direction: column
     height: 200vh 
 
-    .header, .about 
+    .header-home, .section-about   
         @include mixins.center
         height: 100vh 
         width: 100vw
             
-    .header 
+    .header-home 
         flex-direction: column
         background: variables.$gradient-bg
         position: relative 
@@ -197,12 +197,8 @@
             right: 0 
             left: 0
 
-    .about  
-        background: variables.$gradient-color-secundary 
-        display: flex 
-        flex-direction: column 
-        justify-content: left 
-
+  
+    
 
  
 /* @include mixins.notebook                

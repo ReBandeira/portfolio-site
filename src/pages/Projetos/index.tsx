@@ -8,15 +8,15 @@ export default function Projetos() {
             <Header/>
            <div>
                 <div>
-                    icone
-                <span>
-                    <link rel="stylesheet" href="#" />
+                    <img src="" alt="" />
+                    <span>
+                        <link rel="stylesheet" href="#" />
                     </span>
                 </div>          
                
                 <div className="card-info">
-                    <h3>nome projeto</h3>
-                    <p>descrição projeto1</p>
+                    <h3>Em Construção </h3>
+                    <p>Faze de finalização.<b/> Em breve mais detalhes</p>
                 </div>       
            </div>
            <Footer/>
