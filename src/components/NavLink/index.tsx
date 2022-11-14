@@ -8,6 +8,7 @@ interface LinkProps {
 
 export default function NavLink(props: LinkProps) {
     return(
-        <Link className="links-menu" to={props.redirect}>{props.texto}</Link>
+            <Link className="link-menu" to={props.redirect}>{props.texto}</Link>
+       
     )
 }

@@ -1,15 +1,23 @@
 @use '../../styles/mixins'
 @use '../../styles/variables'
     
-.links-menu
+.link-menu
     text-decoration: none
-    margin: 0 1rem
+    margin: 0 1.5rem
     color: variables.$text-color
-    font-size: 20px 
+    font-size: max(22px, 1.4vw)
     font-weight: 600
     transition: transform .3s ease-in-out
 
-    .links-menu:hover
-        color: #e3f5ff 
+    @include mixins.tablet 
+        font-size: min(18px, 3vw)
+
+    @include mixins.mobile 
+        font-size: min(16px, 5vw)
+        font-weight: 500 
+        margin: 0 .5rem 
+
+.link-menu:hover
+    color: #d9f2fe 
 
         
