@@ -1,5 +1,5 @@
 import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import NavBar from "../../components/NavBar";
 import construcao from "../../assets/construcao.svg";
 import "./styles.sass";
 
@@ -12,7 +12,7 @@ const projetos = [
 export default function Projetos() {
     return(
         <section className="projetos">
-            <Header/>
+            <NavBar/>
             <main>
                 <h1>Estes são alguns dos projetos que tenho trabalhado; </h1>
                 <h2>Em breve atualizações!</h2>

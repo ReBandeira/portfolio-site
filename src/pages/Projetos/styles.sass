@@ -23,6 +23,7 @@
             color: variables.$text-color
             text-align: center
             margin: 2rem 0 1rem 0
+            padding: 1rem
 
             @include mixins.notebook 
                 font-size: max(24px, 2vw)                
@@ -31,13 +32,14 @@
                 font-size: max(20px, 2.8vw)
                 font-weight: 550 
                 margin-top: 4rem
-                padding: 1.5rem 0 1rem 0
+                padding: 1rem
 
             @include mixins.mobile 
                 font-size: max(18px, 4.5vw)
                 font-weight: 500 
                 width: 80%
                 margin: auto 
+                margin-top: 2rem
                 padding: 1.5rem 0 .5rem 0
         
         h2
@@ -76,7 +78,8 @@
             @include mixins.mobile 
                 @include mixins.center 
                 flex-direction: column
-                margin: 2rem 0    
+                margin: 1.5rem 0  
+                max-height: 68%  
 
             .card-projeto 
                 @include mixins.center 

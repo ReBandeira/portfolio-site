@@ -1,8 +1,6 @@
 import Waves from '../../components/Waves';
 import perfil from '../../assets/fotoPerfil.png';
 import { BiArrowToBottom } from 'react-icons/bi';
-import MainContainer from '../../components/MainContainer';
-import Footer from '../../components/Footer';
 import './styles.sass';
 import Sobre from '../Sobre';
 

@@ -1,13 +1,13 @@
 import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 import ilustracao from "../../assets/ilustracao.svg";
 import SocialNetworks from "../../components/SocialNetworks";
 import "./styles.sass";
+import NavBar from "../../components/NavBar";
 
 export default function Contatos(): JSX.Element {
     return(
         <section className="contatos">
-           <Header/>
+           <NavBar/>
            <main>
             <div className="info-contatos">
                 <h1>Contatos</h1>
