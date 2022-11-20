@@ -13,7 +13,7 @@ export default function Contatos(): JSX.Element {
                 <h1>Contatos</h1>
                 <p>Você pode entrar em contato comigo através das redes abaixo, ou me enviando um e-mail.</p>   
             </div>
-            <img  className="img-contatos" src={ilustracao} alt="ilustração de uma mulher pintando uma tela" />
+                <img  className="img-contatos" src={ilustracao} alt="ilustração de uma mulher pintando uma tela" />
            </main>  
            <SocialNetworks/>
            <Footer/>

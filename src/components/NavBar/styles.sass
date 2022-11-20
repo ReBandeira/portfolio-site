@@ -18,8 +18,7 @@
     @include mixins.mobile 
         height: 8vh
 
-    @include mixins.mobile 
-        @include mixins.mobile 
+    @include mixins.mobile  
         height: 8vh
     
     .logo 
@@ -39,24 +38,26 @@
 
     .nav-menu
         @include mixins.center 
-        width: 60%
-        justify-content: space-between
+        width: 32%
+        justify-content: space-around
         list-style: none   
         padding: .5rem 1rem     
       
         @include mixins.mobile 
             @include mixins.center 
             flex-direction: column
-            width: 28%
+            width: 26%
             position: absolute
             top: 0
             right: 0
-            height: 30vh
+            height: 18vh
             gap: .5rem
-            padding-top: 5vh
+            padding-top: 8vh
             background: variables.$bg-card
             transform: translateX(100%)     
-            transition: .5s ease-in-out               
+            transition: .5s ease-in-out   
+            border-radius: 0 0 0 20px 
+            display: none           
 
         li
             text-decoration: none
@@ -122,6 +123,7 @@
 
     .nav-active
         transform: translateX(0)
+        display: flex
 
    
 

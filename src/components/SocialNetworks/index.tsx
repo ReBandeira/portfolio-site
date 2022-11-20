@@ -11,8 +11,8 @@ export default function SocialNetworks() {
     return (        
         <div id='social-networks'>
             {socialNetworks.map((network) => (
-                <div className='social-btns'>                
-                    <a href={network.link} className='social-btn' id={network.id} key={network.id} target="_blank">
+                <div className='social-btns' key={network.id}>                
+                    <a href={network.link} className='social-btn' id={network.id}  target="_blank">
                         {network.icon}
                     </a>  
                     <h4>{network.name}</h4> 

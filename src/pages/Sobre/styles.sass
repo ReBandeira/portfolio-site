@@ -3,112 +3,97 @@
 
 .about
     @include mixins.center 
-    flex-direction: column
-    padding: 0 1.5%
+    flex-flow: wrap
+  
     width: 100%
     height: 100vh
     background: variables.$gradient-color-secundary  
     position: relative   
         
     .about-conteudo 
-        @include mixins.center 
+        display: flex
         flex-direction: column
-        width: 72%
-        height: 80%
+        align-items: left   
+        width: 60%
+        height: 50%
         row-gap: 1rem
+        flex-basis: 1
+        margin-top: 4rem
 
         @include mixins.tablet 
             width: 80%
+            margin-top: 6rem
+            height: 40%
 
         @include mixins.mobile       
             width: 80%
+            height: 56%
+            align-items: center
 
         .about-title 
             font-size: variables.$title-size
             color: variables.$text-color
             margin: 1rem
+            padding: 0 1rem
+            text-align: left
 
             @include mixins.notebook 
                 font-size: max(30px, 2.3vw) 
     
             @include mixins.tablet 
                 font-size: max(26px, 3.2vw) 
+                text-align: center
 
             @include mixins.mobile       
                 font-size: min(22px, 6vw)
-
+                text-align: center
 
         .about-text 
             padding: 1rem
             font-size: variables.$text-size
             color: variables.$text-color
-
+            text-align: left
+            
             @include mixins.notebook 
                 font-size: max(22px, .5vw) 
     
             @include mixins.tablet 
                 font-size: max(18px, 1vw) 
+                text-align: center
 
             @include mixins.mobile       
                 font-size: min(16px, 4vw)
+                text-align: center
 
             p 
                 margin: .5rem
-                text-align: center  
+  
+    .aside
+        width: 30%
+        margin-top: 2rem
 
-        .cv 
-            @include mixins.center 
-            flex-direction: column
-            margin: 4rem 0 2rem 0
+        @include mixins.notebook 
+            width: 28%  
+            margin-top: 4rem
+        
+        @include mixins.tablet 
+            width: 28%
+            margin: 1rem
+            display: none
 
-            h2 
-                color: variables.$text-color
-                font-size: variables.$text-size
+        @include mixins.mobile          
+            width: 60% 
+            margin: .5rem
+            display: none
 
-                @include mixins.notebook 
-                    font-size: max(22px, 1.4vw)
-    
-                @include mixins.tablet 
-                    font-size: max(20px, 2.6vw) 
-
-                @include mixins.mobile       
-                    font-size: min(18px, 4.5vw)
-
-            #download-cv   
-                width: 25%
-                border: none
-                border-radius: 5px
-                background: variables.$bg-card
-                margin: 1rem 
-                cursor: pointer
-                box-shadow: 0 0 0 0 variables.$bg-card
-                transition: transform .3s ease-in-out
-
-                @include mixins.notebook 
-                    width: 28%
-
-                @include mixins.tablet 
-                    width: 28%
-
-                @include mixins.mobile       
-                    width: 28%
-
-                #cv-arrow
-                    color: variables.$text-color
-                    font-size: variables.$text-size
-                    text-align: center
-
-                    @include mixins.notebook 
-                        font-size: max(22px, 1.4vw)
-    
-                    @include mixins.tablet 
-                        font-size: max(20px, 2.6vw) 
-
-                    @include mixins.mobile       
-                        font-size: min(18px, 4.5vw)
-
-            #download-cv:hover
-                box-shadow: 0 0 0 4px variables.$bg-card
+        .img-sobre    
+            display: flex 
+            align-items: right       
+            width: 100%    
+            margin: 2rem 1rem 
+            flex-basis: 1.5
+        
+        
                 
 
 

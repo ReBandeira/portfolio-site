@@ -10,11 +10,14 @@ export default function Routes(): JSX.Element {
         <BrowserRouter>
             <WrapperRoutes>
                 <Route path="/" element={<Home/>} />
-                <Route path="/sobre" element={<Sobre/>} />
                 <Route path="/projetos" element={<Projetos/>} />
-                <Route path="/contatos" element={<Contatos/>} />
              </WrapperRoutes>
         </BrowserRouter>
 
     );
 };
+
+/**
+ * <Route path="/sobre" element={<Sobre/>} />
+ *  <Route path="/contatos" element={<Contatos/>} />
+ */

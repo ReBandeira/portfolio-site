@@ -1,7 +1,6 @@
 import {Link} from "react-router-dom";
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
-import logo from "../../assets/logo.png";
 import "./styles.sass";
 
 export default function NavBar() {
@@ -22,14 +21,9 @@ export default function NavBar() {
                 <li>
                     <Link className="link-menu" to="/">Home</Link>
                 </li>
-                <li>
-                    <Link className="link-menu" to="/sobre">Sobre</Link>  
-                </li>
+                
                 <li>
                     <Link className="link-menu" to="/projetos">Projetos</Link>
-                </li>
-                <li>
-                    <Link className="link-menu" to="/contatos">Contatos</Link>
                 </li>
 
             </ul>
@@ -40,3 +34,13 @@ export default function NavBar() {
         </nav>
     )
 };
+
+/***
+ * <li>
+                    <Link className="link-menu" to="/sobre">Sobre</Link>  
+                </li>
+                <li>
+                    <Link className="link-menu" to="/contatos">Contatos</Link>
+                </li>
+
+ */

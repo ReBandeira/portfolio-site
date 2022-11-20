@@ -35,13 +35,15 @@ export default function Home() {
                 </div> 
                 <div className='waves-container'>
                     <Waves/> 
-                </div>
-                   
-            </header>
-            <section  id='section-about' className='section-about'>
-                <Sobre/>                           
-            </section>            
+                </div>                   
+            </header>           
+            <Sobre/>                        
+                     
         </div>
         
     )
 }
+/***
+ *  <section  id='section-about' className='section-about'>
+ *  </section>  
+ */
