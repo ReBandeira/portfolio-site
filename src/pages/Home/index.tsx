@@ -24,14 +24,13 @@ export default function Home() {
                 <div className='avatar'>
                     <img src={perfil} className='foto-perfil' alt="foto frontal de uma mulher"/>
                 </div>
-                <div className='card'>
+                <div className='card' onClick={handleClick}>
                     <h1 className='card-title'>Renata Bandeira</h1>
                     <h2 className='card-sub-title'>Desenvolvedora Frontend</h2>
                     <div className='card-button'>
-                        <button className='card-icon' title='button' onClick={handleClick}>
+                        <button className='card-icon' >
                             <BiArrowToBottom id='arrow'/>
                         </button>
-                        <p id='text'>Clique para mais informações!</p>
                     </div>                
                 </div> 
                 <div className='waves-container'>
