@@ -6,7 +6,7 @@ import "./styles.sass";
 
 export default function Sobre(): JSX.Element {
     return(
-        <section className="about">
+        <section className="about" id="section-about">
             <NavBar/>
             <main className="about-conteudo">
                 <h1 className="about-title">Olá, sou a Renata;</h1>
