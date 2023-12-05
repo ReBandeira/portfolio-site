@@ -26,7 +26,7 @@ export default function Home() {
                 </div>
                 <div className='card' onClick={handleClick}>
                     <h1 className='card-title'>Renata Bandeira</h1>
-                    <h2 className='card-sub-title'>Desenvolvedora Frontend</h2>
+                    <h2 className='card-sub-title'>Desenvolvedora de Software</h2>
                     <div className='card-button'>
                         <button className='card-icon' >
                             <BiArrowToBottom id='arrow'/>
@@ -43,7 +43,3 @@ export default function Home() {
         
     )
 }
-/***
- *  <section  id='section-about' className='section-about'>
- *  </section>  
- */

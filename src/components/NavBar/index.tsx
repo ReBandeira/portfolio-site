@@ -34,13 +34,3 @@ export default function NavBar() {
         </nav>
     )
 };
-
-/***
- * <li>
-                    <Link className="link-menu" to="/sobre">Sobre</Link>  
-                </li>
-                <li>
-                    <Link className="link-menu" to="/contatos">Contatos</Link>
-                </li>
-
- */

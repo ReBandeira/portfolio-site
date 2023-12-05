@@ -26,13 +26,3 @@ export default function Sobre(): JSX.Element {
         </section>
     )
 }
-/***
- * <div className="cv">
-                    <h2>Abrir CV</h2>
-                    <button type="button" id="download-cv">
-                        <a href={CVRenataBandeira}><BiArrowToBottom id='cv-arrow'/></a>
-                        
-                    </button>
-                </div>
- * 
- */
